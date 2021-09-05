@@ -1,0 +1,15 @@
+### github
+
+### to sync your local repo with the forked GitHub.com repo
+git pull
+
+###  git status
+git status
+
+## add and commit git make changes
+
+git add
+git commit
+
+## git push commit to repo
+git push
