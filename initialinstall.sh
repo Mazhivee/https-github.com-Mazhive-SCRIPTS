@@ -98,7 +98,9 @@ echo "################################## WEBDAV ################################
 
 sleep 2
 
-mount -a
+## mounting only possible if server side nfs export file is being changed
+#mount -a
+echo "Mounting home folders is only possible when at the serverside the client is added" | pv -qL 10
 
 # install sudo 
 echo "Install sudo and add peter to sudoer" | pv -qL 10
