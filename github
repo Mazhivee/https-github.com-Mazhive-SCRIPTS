@@ -13,3 +13,8 @@ git commit
 
 ## git push commit to repo
 git push
+
+
+
+## one liner
+git add -A && git commit -m "Setbackground from git" && git push
