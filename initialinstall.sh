@@ -96,6 +96,7 @@ echo "192.168.4.17:/mnt/VG_00/HOME/djuga     				/mnt/VG_00/HOME/djuga          
 echo "################################## WEBDAV ###############################################" >> /etc/fstab
 
 
+apt update
 sleep 2
 
 ## mounting only possible if server side nfs export file is being changed
@@ -256,11 +257,6 @@ fi
 echo " "
 sleep 2
 
-## prepare opera
-wget https://download3.operacdn.com/pub/opera/desktop/60.0.3255.27/linux/opera-stable_60.0.3255.27_amd64.deb
-
-dpkg -i opera-stable_60.0.3255.27_amd64.deb
-
 ## opengl
 echo " installing lshw,opengl,mesa,vulkan,game mode,git,cpufrequtils" | pv -qL 10
 sleep 1
@@ -340,13 +336,13 @@ echo "invalid answer, type yes or no";
 fi
 echo " "
 sleep 2
-
+##  add repos
 echo "deb http://http.us.debian.org/debian bullseye main contrib non-free" >> /etc/apt/sources.list
 echo "deb http://security.debian.org bullseye/updates main contrib non-free" >> /etc/apt/sources.list
-
-apt update
-echo " Installing Steam " |pv -qL 10
-apt install -y build-essential gtk2-engines-murrine:i386 libatk-adaptor:i386 libgail-common:i386 gtk2-engines libatk-adaptor libgail-common linux-headers-$(uname -r) steam
+echo "deb [trusted=yes] http://deb.opera.com/opera-stable/ stable non-free" >> /etc/apt/sources.list
+apt update 
+echo " Installing Opera-stable & Steam " |pv -qL 10
+apt install -y opera-stable build-essential gtk2-engines-murrine:i386 libatk-adaptor:i386 libgail-common:i386 gtk2-engines libatk-adaptor libgail-common linux-headers-$(uname -r) steam
 
 ##### mangohud steam options
 ## LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgamemodeauto.so.0 mangohud  %command%
