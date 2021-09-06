@@ -114,7 +114,7 @@ X=`find $DIR -type f \( -name '*.jpg' -o -name '*.png' \) -print0 | shuf -n1 -z`
 # If using Cairo-Dock add the following line
 #         killall cairo-dock && sleep 0.3 && exec cairo-dock
 
-   sleep 30
+   sleep 5
 
 done
 exit 0
