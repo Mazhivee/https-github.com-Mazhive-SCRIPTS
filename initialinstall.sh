@@ -356,7 +356,8 @@ git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git &
 ## set background script ##
 echo Copying setbackground script| pv -qL 10
 sleep 1
-cp /mnt/VG_00/PUBLIC-LIBRARY/GIT/SCRIPTS/setbackground.sh /usr/bin/setbackground
+wget https://github.com/Mazhive/SCRIPTS/blob/main/setbackground.sh
+cp setbackground.sh /usr/bin/setbackground
 chmod +x /usr/bin/setbackground
 echo " make symlink to 3d print profiles" | pv -qL 10
 
