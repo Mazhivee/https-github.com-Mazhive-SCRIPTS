@@ -46,7 +46,7 @@ mkdir /mnt/VG_00/HOME
 mkdir /mnt/VG_00/PUBLIC-LIBRARY
 mkdir /mnt/VG_00/PRIVATE-LIBRARY/
 # make second third tree
-echo " make thrid folder tree" | pv -qL 10
+echo " make third folder tree" | pv -qL 10
 sleep 1
 mkdir /mnt/VG_00/HOME/noa
 mkdir /mnt/VG_00/HOME/peter
