@@ -356,7 +356,7 @@ git clone --recurse-submodules https://github.com/flightlessmango/MangoHud.git &
 ## set background script ##
 echo Copying setbackground script| pv -qL 10
 sleep 1
-cp /mnt/VG_00/PUBLIC-LIBRARY/SCRIPTS/setbackground.b450mplus /usr/bin/setbackground
+cp /mnt/VG_00/PUBLIC-LIBRARY/GIT/SCRIPTS/setbackground.sh /usr/bin/setbackground
 chmod +x /usr/bin/setbackground
 echo " make symlink to 3d print profiles" | pv -qL 10
 
@@ -374,9 +374,9 @@ echo " done " | pv -qL 10
 echo 'deb http://download.opensuse.org/repositories/home:/strycore/Debian_10/ /' | sudo tee /etc/apt/sources.list.d/home:strycore.list
 curl -fsSL https://download.opensuse.org/repositories/home:strycore/Debian_10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_strycore.gpg > /dev/null
 sudo apt update
-sudo apt install lutris menulibre flatpak
+sudo apt install -y lutris menulibre flatpak
 
-sudo apt-get install libsdl2-2.0 libjpeg-dev libpng-dev libvulkan1 vulkan-utils
+sudo apt-get install -y libsdl2-2.0 libjpeg-dev libpng-dev libvulkan1 vulkan-utils
 
 ## proprietary drivers ppa
 ## insert key
@@ -386,7 +386,7 @@ add-apt-repository ppa:graphics-drivers/ppa
 ## Install PTS and benchmark your gear:
 ##  SQLite3 and SDL need to be installed 
 ## dependencies 
-apt install libpcre2-dev libsdl1.2-dev libsdl-gfx1.2-dev libsdl-net1.2-dev libsdl-image1.2-dev libsdl-ttf2.0-dev libsdl-mixer1.2-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+apt install -y libpcre2-dev libsdl1.2-dev libsdl-gfx1.2-dev libsdl-net1.2-dev libsdl-image1.2-dev libsdl-ttf2.0-dev libsdl-mixer1.2-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 ##  
 #    sudo apt-get install phoronix-test-suite
 #
@@ -396,20 +396,20 @@ apt install libpcre2-dev libsdl1.2-dev libsdl-gfx1.2-dev libsdl-net1.2-dev libsd
 #
 #########
 #install blender - obs-studio
-apt install blender obs-studio
+apt install -y blender obs-studio
 ## Set xsetwacom buttons
-apt install xsetwacom
+apt install -y xsetwacom
 xsetwacom --set "Wacom Intuos BT M Pad pad" Button 1 "key shift"
 xsetwacom --set "Wacom Intuos BT M Pad pad" Button 2 "key ctrl"
 ##### buttons set
 
 ## debian nvidia fbc
-apt install libnvidia-fbc1
+apt install -y libnvidia-fbc1
 
 ### lightdm greeter settings   change your background loginscreen and positioning
-apt install lightdm-gtk-greeter-settings
+apt install -y lightdm-gtk-greeter-settings
 ### CPU info 
-apt install python3-cpuinfo python-cpuinfo py-cpuinfo
+apt install -y python3-cpuinfo python-cpuinfo py-cpuinfo
 
 
 ### nvidia patch fbc , only working with proprietary drivers
