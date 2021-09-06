@@ -408,7 +408,7 @@ xsetwacom --set "Wacom Intuos BT M Pad pad" Button 2 "key ctrl"
 apt install -y libnvidia-fbc1
 
 ### lightdm greeter settings   change your background loginscreen and positioning
-apt install -y lightdm-gtk-greeter-settings
+apt install -y lightdm-gtk-greeter lightdm-gtk-greeter-settings
 ### CPU info 
 apt install -y python3-cpuinfo python-cpuinfo py-cpuinfo
 
