@@ -412,6 +412,9 @@ apt install -y lightdm-gtk-greeter lightdm-gtk-greeter-settings
 ### CPU info 
 apt install -y python3-cpuinfo python-cpuinfo py-cpuinfo
 
+## add flatpak repo
+apt install -y flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ### nvidia patch fbc , only working with proprietary drivers
 # git clone https://github.com/keylase/nvidia-patch.git
