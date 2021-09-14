@@ -12,8 +12,8 @@ if sys.version[0]=='3':
 ##############################
 
 name = 'curldata'
-client_id= '17698594988-d9dk3pdjo1aaj8qondrror1elhl9i94j.apps.googleusercontent.com'
-client_secret='fxZ6UkGBQWh8gDepDHRiw1dz'
+client_id= 'x.apps.googleusercontent.com'
+client_secret='x'
 
 ##############################
 
