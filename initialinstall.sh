@@ -265,8 +265,8 @@ apt-get install -y libgl1-mesa-dev
 ## install -y vulkan 
 apt install -y libvulkan1 mesa-vulkan-drivers vulkan-utils libvulkan-dev
 
-## Install lshw ,gamemode ,git ,cpufrequtils ,ufw ,dolphin-emu
-apt install -y lshw gamemode git cpufrequtils ufw dolphin-emu
+## Install lshw ,gamemode ,git ,cpufrequtils ,ufw
+apt install -y lshw gamemode git cpufrequtils ufw
 
 systemctl enable ufw
 systemctl start ufw
@@ -417,6 +417,10 @@ apt install -y python3-cpuinfo python-cpuinfo py-cpuinfo
 ## add flatpak repo
 apt install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+## add flatpak dolphin-emu
+flatpak install dolphin-emu
+
 
 ### nvidia patch fbc , only working with proprietary drivers
 # git clone https://github.com/keylase/nvidia-patch.git
