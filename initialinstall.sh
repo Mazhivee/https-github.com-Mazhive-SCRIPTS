@@ -399,7 +399,9 @@ apt install -y libpcre2-dev libsdl1.2-dev libsdl-gfx1.2-dev libsdl-net1.2-dev li
 #install blender - obs-studio
 apt install -y blender obs-studio
 ## Set xsetwacom buttons
-apt install -y xsetwacom
+apt install -y xserver-xorg-input-wacom
+#apt install -y xsetwacom
+
 xsetwacom --set "Wacom Intuos BT M Pad pad" Button 1 "key shift"
 xsetwacom --set "Wacom Intuos BT M Pad pad" Button 2 "key ctrl"
 ##### buttons set
