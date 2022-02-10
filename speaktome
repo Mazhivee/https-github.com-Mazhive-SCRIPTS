@@ -1,0 +1,6 @@
+#!/bin/bash
+# dependency festival 
+# part of other script
+
+festival -b '(voice_cmu_us_slt_arctic_hts)' \
+    '(SayText "The temperature is 22 degrees centigrade and there is a slight breeze from the west.")'
