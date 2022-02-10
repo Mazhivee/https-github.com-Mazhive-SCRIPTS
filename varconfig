@@ -1,1 +1,7 @@
-test
+#!/usr/bin/env bash
+# part of other script
+
+server=192.168.4.1
+
+
+echo $server
