@@ -1,3 +1,4 @@
+# convert jpg image sequence to mp4 by utilizing ffmpeg
 import os
 import subprocess
 
