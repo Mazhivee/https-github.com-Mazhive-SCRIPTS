@@ -1,3 +1,5 @@
+# convert raw image sequence to jpg by utilizing rawpy
+# pip install rawpy
 import os
 import rawpy
 from PIL import Image
